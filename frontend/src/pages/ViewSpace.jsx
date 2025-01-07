@@ -141,7 +141,7 @@ ${review.reviewText?.map((q, i) => `${i + 1}. ${q.answer}`).join('\n') || 'No an
       
 
       // Send POST request to the backend
-      const response = await fetch('http://localhost:8000/summarize-reviews', {
+      const response = await fetch('https://testiflow-pythonbackend-production.up.railway.app/summarize-reviews', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -188,7 +188,7 @@ ${review.reviewText?.map((q, i) => `${i + 1}. ${q.answer}`).join('\n') || 'No an
       };
       console.log(payload);
       // Send POST request to the backend using fetch
-      const response = await fetch('http://localhost:8000/generate-casestudy', {
+      const response = await fetch('https://testiflow-pythonbackend-production.up.railway.app/generate-casestudy', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',  // Set content type as JSON
