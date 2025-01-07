@@ -24,8 +24,8 @@ export const sendVerificationEmail = async (email, token) => {
 	const mailOptions = {
 		from: process.env.EMAIL_USERNAME,
 		to: email,
-		subject: 'TestFlow : Verify your email',
-		text: `You tried to login CHAT-IIITA . Please verify your email by entering the following code :  ${token}`
+		subject: 'TestiFlow : Verify your email',
+		text: `You tried to login TestiFlow . Please verify your email by entering the following code :  ${token}`
 	};
 	await transporter.sendMail(mailOptions);
 };
@@ -152,7 +152,7 @@ export const verifyEmail = async (req, res) => {
             subject: 'Email Verified',
             text: `Thank you for verifying your email, ${user.name}!
 			Regards,
-			Team CHAT-IIITA`
+			Team TestiFlow`
         });
 
         res.status(200).json({
@@ -432,7 +432,7 @@ export const createSpace = async (req, res) => {
     }
 
 	const spaceId = uuidv4();
-	const link = `http://localhost:5173/review/${spaceId}`;
+	const link = `https://testiflow.onrender.com/review/${spaceId}`;
     // Create the space
     const newSpace = new Space({
 	userEmail,
