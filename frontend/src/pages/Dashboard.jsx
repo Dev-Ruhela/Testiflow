@@ -65,7 +65,7 @@ const Dashboard = () => {
       return;
     }
     try {
-      const response = await axios.post("http://localhost:8000/generate-testimonial-questions", { url });
+      const response = await axios.post("https://testiflow-pythonbackend-production.up.railway.app/generate-testimonial-questions", { url });
       const questions = response.data.questions || []; // Ensure it's an array
       const header = response.data.header || ""
       const message = response.data.message || ""
