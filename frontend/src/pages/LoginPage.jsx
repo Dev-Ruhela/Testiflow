@@ -47,7 +47,7 @@ const LoginPage = () => {
           className='max-w-md w-full bg-white bg-opacity-75 dark:bg-gray-800 dark:bg-opacity-75 backdrop-filter backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden'
         >
           <div className='p-8 bg-gradient-to-br from-purple-600 to-purple-800 dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-900  text-white'>
-            <h2 className='text-4xl font-semibold mb-6 text-center '>
+            <h2 className='text-4xl font-semibold mb-6 text-center text-teal-400'>
               Welcome Back
             </h2>
 
@@ -79,7 +79,7 @@ const LoginPage = () => {
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className='w-full py-3 px-4 bg-gradient-to-r from-pink-500 to-pink-500 text-white font-bold rounded-lg shadow-lg hover:from-pink-600 hover:to-pink-600 transition duration-200 ease-in-out focus:outline-none focus:ring-4 focus:ring-indigo-400 focus:ring-offset-2 focus:ring-offset-gray-900'
+                className='w-full py-3 px-4 bg-gradient-to-r from-teal-500 to-teal-500 text-white font-bold rounded-lg shadow-lg hover:from-teal-600 hover:to-teal-600 transition duration-200 ease-in-out focus:outline-none focus:ring-4 focus:ring-indigo-400 focus:ring-offset-2 focus:ring-offset-gray-900'
                 type='submit'
                 disabled={isLoading}
               >
