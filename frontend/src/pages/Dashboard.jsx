@@ -247,7 +247,7 @@ const Dashboard = () => {
                 value={url}
                 onChange={(e) => setUrl(e.target.value)}
                 placeholder="Enter the URL"
-                className="w-full p-3 rounded-2xl bg-white text-lg focus:ring-2 focus:ring-blue-500"
+                className="w-full p-3 rounded-2xl bg-white text-gray-800 text-lg focus:ring-2 focus:ring-blue-500"
               />
               <div className="flex justify-between mt-6">
                 <button
